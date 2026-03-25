@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <!-- LOGIN -->
+  <div id="login">
+    <h2>Quiz app</h2>
+    <input id="name" placeholder="Enter your name">
+    <button id="startBtn">Start</button>
+  </div>
+
+  <!-- CATEGORY SELECTION -->
+  <div id="category" style="display:none;">
+    <h3>Select Category</h3>
+    <button id="mathBtn">Math</button>
+    <button id="generalBtn">General Knowledge</button>
+  </div>
+
+  <!-- QUIZ -->
+  <div id="quiz" style="display:none;">
+    <div id="progress"></div>
+    <h3 id="question"></h3>
+    <div id="answers"></div>
+    <p>Time: <span id="time">10</span>s</p>
+  </div>
+
+  <!-- RESULT -->
+  <div id="result" style="display:none;">
+    <h2 id="scoreText"></h2>
+    <h3>🏆 Leaderboard</h3>
+    <div id="leaderboard"></div>
+    <h3 id="sticker"></h3>
+    <button id="restartBtn">Play Again</button>
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="correctSound" src="https://www.soundjay.com/buttons/sounds/button-3.mp3"></audio>
+  <audio id="wrongSound" src="https://www.soundjay.com/buttons/sounds/button-10.mp3"></audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
